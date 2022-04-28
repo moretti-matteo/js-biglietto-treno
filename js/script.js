@@ -18,15 +18,15 @@ do {
 } while (isNaN(age));
 
 const ticketPrice = km * 0.21;
-let discountedPriceTicket = 0;
+let discount = 0;
 
 if (age < 18) {
-    discountedPriceTicket = (ticketPrice * 0.20);
+    discount = (ticketPrice * 0.20);
 } else if (age >= 65) {
-    discountedPriceTicket = (ticketPrice * 0.40);
+    discount = (ticketPrice * 0.40);
 }
 
-const finalPriceTicket = ticketPrice - discountedPriceTicket;
+const finalPriceTicket = ticketPrice - discount;
 
 document.getElementById("ticketPrice").innerHTML = `${finalPriceTicket.toFixed(2)} €`;
 
