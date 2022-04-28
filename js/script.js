@@ -33,5 +33,5 @@ document.getElementById("ticketPrice").innerHTML = `${finalPriceTicket.toFixed(2
 if(discount > 0){
     document.getElementById("line").classList.remove("hidden");
     document.getElementById("initialPrice").innerHTML = `Initial price: ${ticketPrice.toFixed(2)}€`;
-    document.getElementById("discount").innerHTML = `Discount applied: ${discount.toFixed(2)}€`;
+    document.getElementById("discount").innerHTML = `Discount applied: -${discount.toFixed(2)}€`;
 }
